@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+
+    /*------------ COLORS ---------------*/
+
+    /* primary color 500 Base */
+    --primary-color: #3498DB;
+
+    /* Primary 800 HeaderText */
+    --header-text-color: #1a014c;
+
+    /* Primary 900 Body Text */
+    --body-text-color: #090019;
+
+    /* Primary 400 links */
+    --link-text-color: var(--primary-color);
+
+    /* primary gradient */
+    --primary-gradient-color: linear-gradient(116.24deg, #3498DB 1.99%, #008ce9 83.19%);
+
+    /* primary light gradient used for dark background*/
+    --primary-light-gradient-color:#3498DB;
+
+    /* Basic White */
+    --primary-white: #ffffff;
+
+    /* Basic Grey */
+    --primary-basic-grey: #c2c9d1;
+    --primary-secondary-grey: #e5e5ea;
+
+    /* Success */
+    --success-color: #60D280;
+
+    /* Warning */
+    --warning-color: #FFBA30;
+
+    /* Error */
+    --error-color: #FF2146;
+    /*link hover color*/
+    --link-hover:#3498DB;
+    /*layer color* PRIMARY 100T*/
+    --light-layer:#3996d49b;
+
+
+    
+    /*------------ TYPOGRAPHY ---------------*/
+
+    /* Header */
+    --Header-font-family: "Poppins", sans-serif;
+
+    /*Body */
+    --Body-font-family: "Roboto", sans-serif;
+
+
+
+    /*------------ FONTS ---------------*/
+
+    /* Header LG */
+    --header-lg: 48px;
+
+    /* Header MD */
+    --header-md: 40px;
+
+    /* Header SM */
+    --header-sm: 32px;
+
+    /* Header XS */
+    --header-xs: 26px;
+
+
+
+    /* Body Regular XL */
+    --body-xl: 24px;
+
+    /* Body Regular XL */
+    --body-lg: 20px;
+
+    /* Body Regular XL */
+    --body-md: 16px;
+
+    /* Body Regular XL */
+    --body-sm: 14px;
+
+    /* Body Regular XL */
+    --body-xs: 12px;
+
+
+
+    /* Header Weight */
+    --header-weight: 700;
+
+    /* Body Regular Weight */
+    --body-regular-weight: 400;
+
+    /* Body medibold Weight */
+    --body-medium-bold-weight: 600;
+/* Body Semibold Weight */
+--body-semi-bold-weight: 500;
+    /* Body Bold Weight */
+    --body-bold-weight: 700;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* css for drawer use on collapse nav bar ( from rsuite) */
+.rs-drawer-body {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+.navlinks{
+    line-height: 130%;
+    height: 50px !important;
+    min-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--header-text-color);
+    padding: 0px !important;
+  
+}
+
+.navlinksdesktop{
+  color: var(--primary-white);
+}
+ .nav-link{
+    padding: 0px !important;
+}
+
+.navlinks:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.2s;
+    opacity: 85%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navlinks:active {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.2s;
+    opacity: 85%;
   }
-  to {
-    transform: rotate(360deg);
+  .navlinks:focus {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.2s;
+    opacity: 85%;
   }
-}
