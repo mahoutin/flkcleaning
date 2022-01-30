@@ -191,7 +191,7 @@ export const ButtonStyle = styled(Button)`
     ${(props) =>
     props.mobilesize &&
     css`
-      width: 280px;
+      width: 100%;
       @media only screen and (min-width: 1024px) {
         width: 396px;
       }

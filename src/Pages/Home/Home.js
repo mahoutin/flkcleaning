@@ -8,6 +8,7 @@ import { Container } from "rsuite";
 import NavBar from "../../Components/Navbar/Navbar";
 import Intro from "../../Components/Intro/Intro";
 import Testimonial from "../../Components/Testimonial/Testimonial"
+import Why from "../../Components/WhySection/Why";
 //styles
 import { Header } from "../Home/HomeStyle";
 
@@ -21,6 +22,7 @@ const Home = () => {
         <content>
           <Intro />
           <Testimonial/>
+          <Why/>
         </content>
         <footer>footer</footer>
       </Container>

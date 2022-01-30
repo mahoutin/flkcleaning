@@ -23,7 +23,7 @@ const TestimonialSection = () => {
                 </SessionDescription>
                 <SessionName>Alison Walton</SessionName>
                 <SessionsNametwo>PROFESSIONAL DEVELOPMENT</SessionsNametwo>
-                <Sessionsrate>3.000+ Testimonials </Sessionsrate> 
+                <Sessionsrate>3.000+ Testimonials ⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </Sessionsrate> 
             </TestimonialSessionsContainerDes>
 
         </TestimonialSessionsContainerFirst>

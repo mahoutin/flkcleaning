@@ -53,6 +53,7 @@ export const SessionsTitle = styled.div`
     color: var(--primary-color);
     text-transform: uppercase;
     line-height: 18.75px;
+    margin-bottom: 8px;
     @media only screen and (min-width: 760px) {
         font-size: var(--body-lg);
   }
@@ -84,7 +85,7 @@ export const SessionHeader = styled.div`
   }
 `;
 export const SessionDescription = styled.div`
-  font-size: var(--body-xs);
+  font-size: var(--body-sm);
   font-family: var(--Body-font-family);
   line-height: 130%;
   font-weight: var(--body-regular-weight);
@@ -122,8 +123,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 12px;
-border: 1px solid var(--primary-color);
-color: var(--primary-color);
+border: 1px solid #FF007A;
+color: #FF007A;
 font-weight: 500;
 font-size: var(--body-md);
 border-radius:8px;
