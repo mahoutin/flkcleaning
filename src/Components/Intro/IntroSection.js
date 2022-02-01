@@ -20,7 +20,7 @@ const IntroSection = () => {
             </IntoDescription>
             <IntoButtonContainer>
             <ButtonStyle whitebg >Get a Quote </ButtonStyle>
-            <ButtonStyle linkmarginleft servicebutton >Our Service </ButtonStyle>
+            <ButtonStyle linkmarginleft servicebutton><a href="tel:1-207-409-5286">📞 (207) 409-5286</a> </ButtonStyle>
             </IntoButtonContainer>
         </IntroSessionsHalfContainer>
         <IntroSessionsHalfContainer>

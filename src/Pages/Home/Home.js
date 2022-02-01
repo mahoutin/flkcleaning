@@ -9,8 +9,12 @@ import NavBar from "../../Components/Navbar/Navbar";
 import Intro from "../../Components/Intro/Intro";
 import Testimonial from "../../Components/Testimonial/Testimonial"
 import Why from "../../Components/WhySection/Why";
+import ContactUs from "../../Components/Contacts/Contact";
+import Footers from "../../Components/Footer/Footer";
+
 //styles
 import { Header } from "../Home/HomeStyle";
+import Service from "../../Components/Sevices/Service";
 
 const Home = () => {
   return (
@@ -23,8 +27,12 @@ const Home = () => {
           <Intro />
           <Testimonial/>
           <Why/>
+          <Service/>
+          <ContactUs/>
         </content>
-        <footer>footer</footer>
+        <footer>
+          <Footers/>
+        </footer>
       </Container>
     </div>
   );
