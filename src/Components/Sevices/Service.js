@@ -9,7 +9,7 @@ import { ServiceContainer } from "./ServiceStyle";
 
 const Service = () => {
   return (
-    <ServiceContainer>
+    <ServiceContainer id="ourserice">
         <ServiceSection/>
     </ServiceContainer>
   );

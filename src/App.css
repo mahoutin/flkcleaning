@@ -2,157 +2,225 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
+  /*------------ COLORS ---------------*/
 
-    /*------------ COLORS ---------------*/
+  /* primary color 500 Base */
+  --primary-color: #3498db;
 
-    /* primary color 500 Base */
-    --primary-color: #3498DB;
+  /* Primary 800 HeaderText */
+  --header-text-color: #1a014c;
 
-    /* Primary 800 HeaderText */
-    --header-text-color: #1a014c;
+  /* Primary 900 Body Text */
+  --body-text-color: #090019;
 
-    /* Primary 900 Body Text */
-    --body-text-color: #090019;
+  /* Primary 400 links */
+  --link-text-color: var(--primary-color);
 
-    /* Primary 400 links */
-    --link-text-color: var(--primary-color);
+  /* primary gradient */
+  --primary-gradient-color: linear-gradient(
+    116.24deg,
+    #3498db 1.99%,
+    #008ce9 83.19%
+  );
 
-    /* primary gradient */
-    --primary-gradient-color: linear-gradient(116.24deg, #3498DB 1.99%, #008ce9 83.19%);
+  /* primary light gradient used for dark background*/
+  --primary-light-gradient-color: #3498db;
 
-    /* primary light gradient used for dark background*/
-    --primary-light-gradient-color:#3498DB;
+  /* Basic White */
+  --primary-white: #ffffff;
 
-    /* Basic White */
-    --primary-white: #ffffff;
+  /* Basic Grey */
+  --primary-basic-grey: #c2c9d1;
+  --primary-secondary-grey: #e5e5ea;
 
-    /* Basic Grey */
-    --primary-basic-grey: #c2c9d1;
-    --primary-secondary-grey: #e5e5ea;
+  /* Success */
+  --success-color: #60d280;
 
-    /* Success */
-    --success-color: #60D280;
+  /* Warning */
+  --warning-color: #ffba30;
 
-    /* Warning */
-    --warning-color: #FFBA30;
+  /* Error */
+  --error-color: #ff2146;
+  /*link hover color*/
+  --link-hover: #3498db;
+  /*layer color* PRIMARY 100T*/
+  --light-layer: #3996d49b;
 
-    /* Error */
-    --error-color: #FF2146;
-    /*link hover color*/
-    --link-hover:#3498DB;
-    /*layer color* PRIMARY 100T*/
-    --light-layer:#3996d49b;
+  /*------------ TYPOGRAPHY ---------------*/
 
+  /* Header */
+  --Header-font-family: "Poppins", sans-serif;
 
-    
-    /*------------ TYPOGRAPHY ---------------*/
+  /*Body */
+  --Body-font-family: "Roboto", sans-serif;
 
-    /* Header */
-    --Header-font-family: "Poppins", sans-serif;
+  /*------------ FONTS ---------------*/
 
-    /*Body */
-    --Body-font-family: "Roboto", sans-serif;
+  /* Header LG */
+  --header-lg: 48px;
 
+  /* Header MD */
+  --header-md: 40px;
 
+  /* Header SM */
+  --header-sm: 32px;
 
-    /*------------ FONTS ---------------*/
+  /* Header XS */
+  --header-xs: 26px;
 
-    /* Header LG */
-    --header-lg: 48px;
+  /* Body Regular XL */
+  --body-xl: 24px;
 
-    /* Header MD */
-    --header-md: 40px;
+  /* Body Regular XL */
+  --body-lg: 20px;
 
-    /* Header SM */
-    --header-sm: 32px;
+  /* Body Regular XL */
+  --body-md: 16px;
 
-    /* Header XS */
-    --header-xs: 26px;
+  /* Body Regular XL */
+  --body-sm: 14px;
 
+  /* Body Regular XL */
+  --body-xs: 12px;
 
+  /* Header Weight */
+  --header-weight: 700;
 
-    /* Body Regular XL */
-    --body-xl: 24px;
+  /* Body Regular Weight */
+  --body-regular-weight: 400;
 
-    /* Body Regular XL */
-    --body-lg: 20px;
-
-    /* Body Regular XL */
-    --body-md: 16px;
-
-    /* Body Regular XL */
-    --body-sm: 14px;
-
-    /* Body Regular XL */
-    --body-xs: 12px;
-
-
-
-    /* Header Weight */
-    --header-weight: 700;
-
-    /* Body Regular Weight */
-    --body-regular-weight: 400;
-
-    /* Body medibold Weight */
-    --body-medium-bold-weight: 600;
-/* Body Semibold Weight */
---body-semi-bold-weight: 500;
-    /* Body Bold Weight */
-    --body-bold-weight: 700;
-
+  /* Body medibold Weight */
+  --body-medium-bold-weight: 600;
+  /* Body Semibold Weight */
+  --body-semi-bold-weight: 500;
+  /* Body Bold Weight */
+  --body-bold-weight: 700;
 }
 
 /* css for drawer use on collapse nav bar ( from rsuite) */
 .rs-drawer-body {
-    position: relative;
-    height: 100%;
-    overflow: auto;
+  position: relative;
+  height: 100%;
+  overflow: auto;
 }
 
-.navlinks{
-    line-height: 130%;
-    height: 50px !important;
-    min-width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: var(--header-text-color);
-    padding: 0px !important;
-  
+.navlinks {
+  line-height: 130%;
+  height: 50px !important;
+  min-width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--header-text-color);
+  padding: 0px !important;
 }
 
-.navlinksdesktop{
+.navlinksdesktop {
   color: var(--primary-white);
 }
- .nav-link{
-    padding: 0px !important;
+.nav-link {
+  padding: 0px !important;
 }
 
 .navlinks:hover {
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: 0.2s;
-    opacity: 85%;
+  text-decoration: none;
+  color: #f4bf00;
+  transition: 0.2s;
+  opacity: 85%;
+}
+.navlinks:active {
+  text-decoration: none;
+  color: #f4bf00;
+  transition: 0.2s;
+  opacity: 85%;
+}
+.navlinks:focus {
+  text-decoration: none;
+  color: #f4bf00;
+  transition: 0.2s;
+  opacity: 85%;
+}
+
+.navbar > .container-fluid {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.quotelinks {
+  background-color: var(--primary-white);
+  color: var(--primary-color);
+  height: 34px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: var(--body-sm);
+  font-family: var(--Body-font-family);
+  font-weight: var(--body-semi-bold-weight);
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quotelinks:hover,
+.quotelinks:active,
+.quotelinks:focus {
+  text-decoration: none;
+  color: var(--primary-white);
+  border: 2px solid var(--primary-white);
+  background-color: var(--primarry-color);
+  text-decoration: none;
+}
+.quotecollinks {
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+}
+.quotecollinks:hover,
+.quotecollinks:active,
+.quotecollinks:focus {
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  background-color: var(--primarry-white);
+  text-decoration: none;
+}
+
+.linkbutton {
+  padding: 24px 16px;
+}
+
+.quote {
+  width: 100%;
+  padding: 24px 16px;
+ 
+}
+
+.quotemargin{
+  margin: 0 auto;
+}
+
+ @media only screen and (min-width: 1024px) {
+    .quote {
+      width: 396px;
+    }
   }
-  .navlinks:active {
-    text-decoration: none;
-    color: var(--primary-color);
-    transition: 0.2s;
-    opacity: 85%;
+
+  .phonecall{
+    color: #000;
   }
-  .navlinks:focus {
+  .phonecall:hover{
+    color: var(--primary-white);
     text-decoration: none;
-    color: var(--primary-color);
-    transition: 0.2s;
-    opacity: 85%;
+  }
+
+  .buttonsubmit:hover{
+    background-color: var(--primary-color);
   }

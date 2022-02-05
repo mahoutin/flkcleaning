@@ -11,6 +11,7 @@ import Testimonial from "../../Components/Testimonial/Testimonial"
 import Why from "../../Components/WhySection/Why";
 import ContactUs from "../../Components/Contacts/Contact";
 import Footers from "../../Components/Footer/Footer";
+import About from "../../Components/AboutUS/About";
 
 //styles
 import { Header } from "../Home/HomeStyle";
@@ -28,6 +29,7 @@ const Home = () => {
           <Testimonial/>
           <Why/>
           <Service/>
+          <About/>
           <ContactUs/>
         </content>
         <footer>

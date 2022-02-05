@@ -2,6 +2,7 @@ import React from "react";
 
 //components
 import HeroPicture from "../../Assets/Group8h.png"
+import { HashLink as Link } from "react-router-hash-link";
 
 //styled
 import { IntroSessionsContainer,IntroSessionsHalfContainer,IntoHeader,IntoButtonContainer,IntoDescription} from "./IntroStyle";
@@ -19,8 +20,10 @@ const IntroSection = () => {
             We are a certified company. We Provide the best cleaning service for you and company.
             </IntoDescription>
             <IntoButtonContainer>
-            <ButtonStyle whitebg >Get a Quote </ButtonStyle>
-            <ButtonStyle linkmarginleft servicebutton><a href="tel:1-207-409-5286">📞 (207) 409-5286</a> </ButtonStyle>
+            <Link to="#contact" className="quotelinks linkbutton">
+                 Get a quote
+          </Link>
+            <ButtonStyle linkmarginleft servicebutton><a href="tel:1-207-409-5286" className="phonecall">📞 (207) 409-5286</a> </ButtonStyle>
             </IntoButtonContainer>
         </IntroSessionsHalfContainer>
         <IntroSessionsHalfContainer>

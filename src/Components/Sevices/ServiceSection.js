@@ -12,6 +12,7 @@ import dishwash from "../../Assets/dishwash.jpeg"
 import floor from "../../Assets/floor.jpeg"
 import mouveout from "../../Assets/mouveout.jpeg"
 import residence from "../../Assets/residence.png"
+import { HashLink as Link } from "react-router-hash-link";
 
 //styled
 import {
@@ -22,23 +23,16 @@ import {
   ServiceWrapperDes,
 } from "./ServiceStyle";
 import {
-  SessionDescription,
   SessionHeader,
-  Sessionsrate,
-  SessionsNametwo,
   SessionName,
   SessionsTitle,
-  TestimonialSessionsContainerDes,
-  TestimonialSessionsContainer,
-  TestimonialSessionsContainerFirst,
-  TestimonialSessionsContainerImg,
 } from "../Testimonial/TestimonialStyle";
-import { ButtonStyle } from "../Button/LinkStyle";
+
 
 const WhySection = () => {
   return (
     <ServiceSessionsContainer>
-      <SessionsTitle>Testimonials</SessionsTitle>
+      <SessionsTitle>OUR SERVICES</SessionsTitle>
       <SessionHeader>What customers say about us?</SessionHeader>
       <ServiceWrapper>
         <ServiceWrapperItem>
@@ -162,8 +156,9 @@ const WhySection = () => {
           </ServiceWrapperDes>
         </ServiceWrapperItem>
       </ServiceWrapper>
-      <ButtonStyle primarybg mobilesize style={{margin:"0 auto"}}>Get a quote</ButtonStyle>
-    </ServiceSessionsContainer>
+      <Link to="#contact" className="quotelinks quotecollinks quote quotemargin">
+          Get a quote
+        </Link>    </ServiceSessionsContainer>
   );
 };
 

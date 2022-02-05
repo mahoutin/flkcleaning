@@ -2,7 +2,7 @@ import React from "react";
 
 import { Drawer } from "rsuite";
 import { HashLink as Link } from "react-router-hash-link";
-
+import logo2 from "../../Assets/logo2.svg";
 
 import {
   HeaderLogoContainer,
@@ -17,7 +17,7 @@ import {
   NavDrawerItemStyle,
   NavDrawerLinkStyle,
 } from "./NavbarStyle";
-import { ButtonStyle } from "../Button/LinkStyle";
+import { ButtonStyle,ButtonLinkStyle  } from "../Button/LinkStyle";
 
 const NavBar = () => {
   const [open, setOpen] = React.useState(false);
@@ -35,7 +35,6 @@ const NavBar = () => {
         </Drawer.Header>
         <Drawer.Body>
           <NavDrawerStyle navbar>
-
             <NavDrawerItemStyle>
               <Link to="/" className="navlinks" onClick={() => setOpen(false)}>
                 <NavDrawerLinkStyle>Home</NavDrawerLinkStyle>
@@ -43,90 +42,73 @@ const NavBar = () => {
             </NavDrawerItemStyle>
 
             <NavDrawerItemStyle>
-              <Link
-                to="/"
-                className="navlinks"
-                onClick={() => setOpen(false)}
-              >
+              <Link to="/aboutus" className="navlinks" onClick={() => setOpen(false)}>
                 <NavDrawerLinkStyle>About Us</NavDrawerLinkStyle>
               </Link>
             </NavDrawerItemStyle>
 
             <NavDrawerItemStyle>
-              <Link
-                to="/"
-                className="navlinks"
-                onClick={() => setOpen(false)}
-              >
+              <Link to="/#ourserice" className="navlinks" onClick={() => setOpen(false)}>
                 <NavDrawerLinkStyle>Our Services</NavDrawerLinkStyle>
               </Link>
             </NavDrawerItemStyle>
 
             <NavDrawerItemStyle>
-              <Link
-                to="/"
-                className="navlinks"
-                onClick={() => setOpen(false)}
-              >
+              <Link to="/#footer" className="navlinks" onClick={() => setOpen(false)}>
                 <NavDrawerLinkStyle>Contact Us</NavDrawerLinkStyle>
               </Link>
             </NavDrawerItemStyle>
 
-            <ButtonStyle
-             
-              colnavbtn
-            >
-              Get a Quote
-            </ButtonStyle>
+            <Link to="/#contact" className="quotelinks quotecollinks" onClick={() => setOpen(false)}>
+                 Get a quote
+          </Link>
           </NavDrawerStyle>
         </Drawer.Body>
       </Drawer>
-      <NavbarStyle  expand="md" fixed="top" light>
+
+      <NavbarStyle expand="md" fixed="top" dark >
         <NavbarBrandStyle href="/">
           <HeaderLogoContainer>
-            FKL
+            <img src={logo2} alt="cleaning" />
           </HeaderLogoContainer>
-          {/* <HeaderLogoText /> */}
         </NavbarBrandStyle>
         <NavbarTogglerStyle onClick={() => setOpen(true)} />
         <CollapseStyle navbar>
           <NavStyle className="ms-auto" navbar>
-          <NavItemStyle>
+            <NavItemStyle>
               <NavLinkStyle>
                 <Link to="/" className="navlinks navlinksdesktop">
-               Home
+                  Home
                 </Link>
               </NavLinkStyle>
             </NavItemStyle>
             <NavItemStyle>
               <NavLinkStyle>
-                <Link to="/" className="navlinks navlinksdesktop">
-                About Us
-                </Link>
-              </NavLinkStyle>
-            </NavItemStyle>
-
-            <NavItemStyle>
-              <NavLinkStyle>
-                <Link to="/" className="navlinks navlinksdesktop">
-                Our Services
+                <Link to="/aboutus" className="navlinks navlinksdesktop">
+                  About Us
                 </Link>
               </NavLinkStyle>
             </NavItemStyle>
 
             <NavItemStyle>
               <NavLinkStyle>
-                <Link to="/" className="navlinks navlinksdesktop">
+                <Link to="#ourserice" className="navlinks navlinksdesktop">
+                  Our Services
+                </Link>
+              </NavLinkStyle>
+            </NavItemStyle>
+
+            <NavItemStyle>
+              <NavLinkStyle>
+                <Link to="#footer" className="navlinks navlinksdesktop">
                   Contact Us
                 </Link>
               </NavLinkStyle>
             </NavItemStyle>
           </NavStyle>
-          <ButtonStyle
-            navbtn
-          >
-            Get a Quote
-          </ButtonStyle>
+          <Link to="#contact" className="quotelinks">
+                 Get a quote
+          </Link>
         </CollapseStyle>
       </NavbarStyle>
     </div>

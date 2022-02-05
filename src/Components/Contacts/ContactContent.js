@@ -109,7 +109,7 @@ const ContactContent = () => {
               </ContactSectionInputWrapper>
             </ContactSectionFormContent>
             <ContactSectionButtonWrapper>
-              <Button type="submit" appearance="ghost">
+              <Button type="submit" appearance="ghost" className="buttonsubmit">
                 Submit
               </Button>
             </ContactSectionButtonWrapper>

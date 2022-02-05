@@ -9,7 +9,7 @@ import { IntroContainer } from "./IntroStyle";
 
 const Intro = () => {
   return (
-    <IntroContainer id="#homeintro">
+    <IntroContainer id="homeintro">
         <IntroSection/>
     </IntroContainer>
   );

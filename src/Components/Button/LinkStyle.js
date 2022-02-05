@@ -65,8 +65,8 @@ export const ButtonLinkStyle = styled(Link)`
 ${(props) =>
     props.navbtn &&
     css`
-      background-color: var(--primary-color);
-      color: var(--primary-white);
+      background-color: var(--primary-white);
+      color: var(--primary-color);
       height: 34px;
       padding: 12px 16px;
       border-radius: 8px;
@@ -75,6 +75,20 @@ ${(props) =>
       font-weight: var(--body-semi-bold-weight);
       margin: 0;
       text-align: center;
+
+      &:hover {
+        text-decoration: none;
+        color: var(--primary-white);
+        border: 2px solid var(--primary-white);
+        background-color: var(--primarry-color);
+        text-decoration: none;
+      } 
+      &:focus{
+        text-decoration: none;
+      }
+      &:active{
+        text-decoration: none;
+      }
     `}
  // collaps nav button link
     ${(props) =>
@@ -104,7 +118,7 @@ ${(props) =>
         color: var(--primary-color);
         transition: 0.2s;
         border: 2px solid var(--primary-color);
-      }    
+      }
     `}
 
 
@@ -123,7 +137,7 @@ ${(props) =>
       line-height: 130%;
       text-align: center;
       margin: 0 16px;
-      
+
       &:hover {
         text-decoration: underline;
         background-color: transparent;
@@ -204,7 +218,7 @@ ${(props) =>
       background-color: var(--primary-white);
       color: var(--primary-color);
       height: 34px;
-      padding:24px 16px;
+      padding: 24px 16px;
       border-radius: 8px;
       font-size: var(--body-sm);
       font-family: var(--Body-font-family);
@@ -231,9 +245,8 @@ ${(props) =>
    ${(props) =>
     props.servicebutton &&
     css`
-      background-color: #F4BF00;
+      background-color: #f4bf00;
       color: #000;
-     
 
       /* &:hover {
         text-decoration: none;
@@ -259,7 +272,7 @@ ${(props) =>
       line-height: 130%;
       text-align: center;
       margin: 0 16px;
-      
+
       &:hover {
         text-decoration: underline;
         background-color: transparent;

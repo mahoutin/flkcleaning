@@ -5,6 +5,7 @@ import UserSvg from "../../Assets/3Users.svg";
 import LocationSvg from "../../Assets/Location.svg";
 import SafeSvg from "../../Assets/ShieldDone.svg";
 import TimeSvg from "../../Assets/TimeCircle.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 //styled
 import {
@@ -17,16 +18,10 @@ import {
 import {
   SessionDescription,
   SessionHeader,
-  Sessionsrate,
-  SessionsNametwo,
   SessionName,
   SessionsTitle,
-  TestimonialSessionsContainerDes,
-  TestimonialSessionsContainer,
-  TestimonialSessionsContainerFirst,
-  TestimonialSessionsContainerImg,
 } from "../Testimonial/TestimonialStyle";
-import { ButtonStyle } from "../Button/LinkStyle";
+
 
 const WhySection = () => {
   return (
@@ -39,9 +34,9 @@ const WhySection = () => {
           offices and many custormers are satisfied with our work. Our are
           dedicated to make you satisfied with the service provided.{" "}
         </SessionDescription>
-        <ButtonStyle primarybg mobilesize>
-          Get a Quote{" "}
-        </ButtonStyle>
+        <Link to="#contact" className="quotelinks quotecollinks quote">
+          Get a quote
+        </Link>
       </WhySessionsContainerHalf>
       <WhySessionsContainerHalf>
         <WhySessionsContainerHalfDivider>
