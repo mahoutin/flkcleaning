@@ -9,7 +9,7 @@ import { AboutContainer } from "./AboutStyle";
 
 const About= () => {
   return (
-    <AboutContainer  id="about">
+    <AboutContainer  id="aboutus">
         <AboutSection/>
     </AboutContainer>
   );

@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff354105.css",
+    "main.js": "/static/js/main.19ba9a9d.js",
+    "static/js/787.55fb5b8b.chunk.js": "/static/js/787.55fb5b8b.chunk.js",
+    "static/media/green.jpeg": "/static/media/green.8c3425c868c11f3a0ca5.jpeg",
+    "static/media/w2.jpeg": "/static/media/w2.b8153b4f5ca0bff254f2.jpeg",
+    "static/media/Group8h.png": "/static/media/Group8h.820d154515b32715c498.png",
+    "static/media/janitori.jpeg": "/static/media/janitori.9ad910d83f62c304d7bf.jpeg",
+    "static/media/logo2.svg": "/static/media/logo2.ca567d667ecbfd1b629fdfdd3adc7106.svg",
+    "static/media/aibnb.jpeg": "/static/media/aibnb.a1f17a50e66dd8200902.jpeg",
+    "static/media/w1.jpeg": "/static/media/w1.9a17f8072d1cd478c63a.jpeg",
+    "static/media/w4.jpeg": "/static/media/w4.45dba1a6f8be20bfb3b9.jpeg",
+    "static/media/logo.jpeg": "/static/media/logo.04205ac7041be7de12a2.jpeg",
+    "static/media/commercial.jpeg": "/static/media/commercial.f8fe4aae07eccc53df84.jpeg",
+    "static/media/residence.png": "/static/media/residence.9ec7912012d91e29c9ba.png",
+    "static/media/covid.jpeg": "/static/media/covid.d2cba0aec8cd32a6e555.jpeg",
+    "static/media/w3.jpeg": "/static/media/w3.728e64d3153eade6b242.jpeg",
+    "static/media/mouveout.jpeg": "/static/media/mouveout.6b43392a8c81d9cf7612.jpeg",
+    "static/media/carpet.jpg": "/static/media/carpet.e782f3705a89bc3166ed.jpg",
+    "static/media/christina.jpeg": "/static/media/christina.bb1e9e40e1a25f42a88f.jpeg",
+    "static/media/desinfect.jpeg": "/static/media/desinfect.af1adca2af8982f83cc4.jpeg",
+    "static/media/dishwash.jpeg": "/static/media/dishwash.698965204d3673a1a69b.jpeg",
+    "static/media/3Users.svg": "/static/media/3Users.6b03d7a36b277ae9b7d7bd208e0d6402.svg",
+    "static/media/ShieldDone.svg": "/static/media/ShieldDone.fa170cc5a923a45d447ebaae13949c1f.svg",
+    "index.html": "/index.html",
+    "static/media/Location.svg": "/static/media/Location.ce5c67273ee2877ded9a61ff2f49583d.svg",
+    "static/media/TimeCircle.svg": "/static/media/TimeCircle.99d53bab0adea3213b21c06d2b879b07.svg",
+    "main.ff354105.css.map": "/static/css/main.ff354105.css.map",
+    "main.19ba9a9d.js.map": "/static/js/main.19ba9a9d.js.map",
+    "787.55fb5b8b.chunk.js.map": "/static/js/787.55fb5b8b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff354105.css",
+    "static/js/main.19ba9a9d.js"
+  ]
+}

@@ -14,30 +14,28 @@ import {
 } from "./ContactStyle";
 
 const ContactContent = () => {
-  const form = useRef();
-  const [sendMsg, setSendMsg] = useState(false);
+    const formData = useRef()
+    const init = {
+        name: '',
+        email: '',
+        service: '',
+        message: ''
+    }
+    const [sendMsg, setSendMsg] = useState(false);
+    const [form, setForm] = useState(init)
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "q0_gmail_service_id",
-        "q0_contact_us_template",
-        form.current,
-        "user_7fcX0YN0dqD6XDDHMDheu"
-      )
-      .then(
-        (result) => {
-          setSendMsg(true);
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    console.log("The email has been sent!");
-  };
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log(form);
+        emailjs.sendForm('service_n8hfhss', 'template_ekcnicd', formData.current, 'user_JcaUqMMS64g6ZnvCP6eC3')
+        .then((result) => {
+            setSendMsg(true);
+            setForm(init)
+            //console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
   return (
     <ContactSectionContentWrapper>
@@ -63,29 +61,35 @@ const ContactContent = () => {
             </ContactSectionButtonWrapper>
           </div>
         ) : (
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={formData} onSubmit={sendEmail}>
             <ContactSectionFormContent>
               <ContactSectionInputWrapper>
                 <label>Name</label>
                 <input
                   type="text"
-                  name="name"
+                  name="from_name"
                   placeholder="Enter your name here"
                   required
                   className="name-input"
+                  value={form.name}
+                  onChange={e => setForm({...form, name: e.target.value})}
                 />
                 <label>Email</label>
                 <input
                   type="email"
-                  name="email"
+                  name="client_email"
                   placeholder="Enter your email here"
                   required
                   className="name-input"
+                  value={form.email}
+                  onChange={e => setForm({...form, email: e.target.value})}
                 />
                 <label for="services">What service would you like to get a quote for:</label>
 
-                <select name="services" id="services">
+                <select name="request_service" id="services" onChange={e => setForm({...form, service: e.target.value})} >
+                  
                   <option value="Janitorial Service">Janitorial Service</option>
+
                   <option value="Green Cleaning">Green Cleaning</option>
                   <option value="Carpet Cleaning">Carpet Cleaning</option>
                   <option value="Disinfecting Surfaces">Disinfecting Surfaces</option>
@@ -105,6 +109,8 @@ const ContactContent = () => {
                   name="message"
                   placeholder="Enter your message here"
                   required
+                  value={form.message}
+                  onChange={e => setForm({...form, message: e.target.value})}
                 />
               </ContactSectionInputWrapper>
             </ContactSectionFormContent>

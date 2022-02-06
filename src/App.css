@@ -224,3 +224,8 @@
   .buttonsubmit:hover{
     background-color: var(--primary-color);
   }
+
+  .oselect{
+    border: 1px solid red !important;
+    height: 100px !important;
+  }

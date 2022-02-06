@@ -3,6 +3,7 @@ import React from "react";
 import { Drawer } from "rsuite";
 import { HashLink as Link } from "react-router-hash-link";
 import logo2 from "../../Assets/logo2.svg";
+import logo from "../../Assets/logo.jpeg";
 
 import {
   HeaderLogoContainer,
@@ -42,7 +43,7 @@ const NavBar = () => {
             </NavDrawerItemStyle>
 
             <NavDrawerItemStyle>
-              <Link to="/aboutus" className="navlinks" onClick={() => setOpen(false)}>
+              <Link to="/#aboutus" className="navlinks" onClick={() => setOpen(false)}>
                 <NavDrawerLinkStyle>About Us</NavDrawerLinkStyle>
               </Link>
             </NavDrawerItemStyle>
@@ -69,7 +70,7 @@ const NavBar = () => {
       <NavbarStyle expand="md" fixed="top" dark >
         <NavbarBrandStyle href="/">
           <HeaderLogoContainer>
-            <img src={logo2} alt="cleaning" />
+            <img src={logo} alt="cleaning" />
           </HeaderLogoContainer>
         </NavbarBrandStyle>
         <NavbarTogglerStyle onClick={() => setOpen(true)} />
@@ -84,7 +85,7 @@ const NavBar = () => {
             </NavItemStyle>
             <NavItemStyle>
               <NavLinkStyle>
-                <Link to="/aboutus" className="navlinks navlinksdesktop">
+                <Link to="#aboutus" className="navlinks navlinksdesktop">
                   About Us
                 </Link>
               </NavLinkStyle>
