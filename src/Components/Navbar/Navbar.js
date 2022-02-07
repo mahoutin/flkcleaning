@@ -2,7 +2,6 @@ import React from "react";
 
 import { Drawer } from "rsuite";
 import { HashLink as Link } from "react-router-hash-link";
-import logo2 from "../../Assets/logo2.svg";
 import logo from "../../Assets/logo.jpeg";
 
 import {
@@ -17,8 +16,9 @@ import {
   NavDrawerStyle,
   NavDrawerItemStyle,
   NavDrawerLinkStyle,
+  HeaderLogoContainerTitle 
 } from "./NavbarStyle";
-import { ButtonStyle,ButtonLinkStyle  } from "../Button/LinkStyle";
+
 
 const NavBar = () => {
   const [open, setOpen] = React.useState(false);
@@ -72,6 +72,8 @@ const NavBar = () => {
           <HeaderLogoContainer>
             <img src={logo} alt="cleaning" />
           </HeaderLogoContainer>
+          <HeaderLogoContainerTitle ><p>FKL Cleaning Service <br/>and Sells LLC</p></HeaderLogoContainerTitle >
+
         </NavbarBrandStyle>
         <NavbarTogglerStyle onClick={() => setOpen(true)} />
         <CollapseStyle navbar>

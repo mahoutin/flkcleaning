@@ -17,14 +17,32 @@ export const HeaderLogoContainer = styled.div`
   width: 50px;
   height: 50px;
 
+
+
   img{
     width: 100%;
     height: 100%;
     border-radius:4px;
     object-fit: contain;
   }
-`;
 
+`;
+export const HeaderLogoContainerTitle = styled.div`
+display: flex;
+    font-weight: 600;
+    font-size: 12px;
+    max-width: 100px;
+    text-align:center;
+    @media only screen and (max-width: 320px) {
+      font-size: 10px;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+    @media only screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+`
 export const NavbarStyle = styled(Navbar)`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   background: var(--primary-color);
@@ -43,6 +61,8 @@ export const NavbarTogglerStyle = styled(NavbarToggler)`
 
 export const NavbarBrandStyle = styled(NavbarBrand)`
   display: flex;
+align-items: center;
+
 `;
 
 export const NavStyle = styled(Nav)`

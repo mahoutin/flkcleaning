@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff354105.css",
-    "main.js": "/static/js/main.19ba9a9d.js",
+    "main.css": "/static/css/main.332f5863.css",
+    "main.js": "/static/js/main.bb6ec79f.js",
     "static/js/787.55fb5b8b.chunk.js": "/static/js/787.55fb5b8b.chunk.js",
     "static/media/green.jpeg": "/static/media/green.8c3425c868c11f3a0ca5.jpeg",
     "static/media/w2.jpeg": "/static/media/w2.b8153b4f5ca0bff254f2.jpeg",
     "static/media/Group8h.png": "/static/media/Group8h.820d154515b32715c498.png",
     "static/media/janitori.jpeg": "/static/media/janitori.9ad910d83f62c304d7bf.jpeg",
-    "static/media/logo2.svg": "/static/media/logo2.ca567d667ecbfd1b629fdfdd3adc7106.svg",
     "static/media/aibnb.jpeg": "/static/media/aibnb.a1f17a50e66dd8200902.jpeg",
     "static/media/w1.jpeg": "/static/media/w1.9a17f8072d1cd478c63a.jpeg",
     "static/media/w4.jpeg": "/static/media/w4.45dba1a6f8be20bfb3b9.jpeg",
@@ -26,12 +25,12 @@
     "index.html": "/index.html",
     "static/media/Location.svg": "/static/media/Location.ce5c67273ee2877ded9a61ff2f49583d.svg",
     "static/media/TimeCircle.svg": "/static/media/TimeCircle.99d53bab0adea3213b21c06d2b879b07.svg",
-    "main.ff354105.css.map": "/static/css/main.ff354105.css.map",
-    "main.19ba9a9d.js.map": "/static/js/main.19ba9a9d.js.map",
+    "main.332f5863.css.map": "/static/css/main.332f5863.css.map",
+    "main.bb6ec79f.js.map": "/static/js/main.bb6ec79f.js.map",
     "787.55fb5b8b.chunk.js.map": "/static/js/787.55fb5b8b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff354105.css",
-    "static/js/main.19ba9a9d.js"
+    "static/css/main.332f5863.css",
+    "static/js/main.bb6ec79f.js"
   ]
 }

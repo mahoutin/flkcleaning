@@ -19,8 +19,7 @@ const TestimonialSection = () => {
                 <SessionsTitle>Testimonials</SessionsTitle>
                 <SessionHeader>What customers say about us?</SessionHeader>
                 <SessionDescription>
-                I ‘m an office worker who does not have free time to clean my house. I have been using FKL service for about a years now. I am very satisfied with the service that FKL has provided. Now they are serving my office too. Thank you FKL.
-                </SessionDescription>
+                I’m an office worker who does not have free time to clean my house. I have been using FKL Cleaning Services for many years. Now they are serving my office too and I am very satisfied with the cleaning Services provided by FKL Cleaning Service and Sells. Thanks.                 </SessionDescription>
                 <SessionName>Alison Walton</SessionName>
                 <SessionsNametwo>PROFESSIONAL DEVELOPMENT</SessionsNametwo>
                 <Sessionsrate>3.000+ Testimonials ⭐️ ⭐️ ⭐️ ⭐️ ⭐️ </Sessionsrate> 

@@ -229,3 +229,12 @@
     border: 1px solid red !important;
     height: 100px !important;
   }
+
+  .sociallink{
+    color: #f4bf00;
+
+  }
+  .sociallink:hover{
+    color: #f4bf00;
+    
+  }
