@@ -237,7 +237,7 @@
   }
 
   .oselect{
-    border: 1px solid red !important;
+    /* border: 1px solid red !important; */
     height: 100px !important;
   }
 
@@ -250,4 +250,17 @@
     
   }
 
+  .selectdiv{
+    /* display: flex;
+    flex-direction: column;
+    margin-top: 20px; */
+    /* border: 1px solid red;
+    display: flex;
+    flex-direction: column; */
+
+  }
+
+  .marg-label{
+    margin-top:10px ;
+  }
 

@@ -85,7 +85,7 @@ const ContactContent = () => {
                   onChange={e => setForm({...form, email: e.target.value})}
                 />
 
-                <div>
+                <div className="selectdiv">
                 <label for="services">What service would you like to get a quote for:</label>
                 <select name="request_service" id="services" onChange={e => setForm({...form, service: e.target.value})} >
                   <option value="Janitorial Service">Janitorial Service</option>
@@ -99,14 +99,11 @@ const ContactContent = () => {
                   <option value="Floor Care">Floor Care</option>
                   <option value="Covid-19 Disinfection">Covid-19 Disinfection</option>
                   <option value="Commercial Cleaning">Commercial Cleaning</option>
-                
                 </select>
                 </div>
-
-
               </ContactSectionInputWrapper>
               <ContactSectionInputWrapper formmargin>
-                <label>Message</label>
+                <label className="marg-label">Message</label>
                 <textarea
                   name="message"
                   placeholder="Enter your message here"

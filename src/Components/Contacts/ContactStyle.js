@@ -76,6 +76,8 @@ export const ContactSectionFormContent = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
+
+
   @media only screen and (min-width: 1024px) {
     flex-direction: row;
   }
@@ -83,10 +85,11 @@ export const ContactSectionFormContent = styled.div`
 export const ContactSectionInputWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   width: 100%;
   height: 180px;
+  /* border: 1px solid red ; */
 
   label {
     font-size: var(--body-md);
@@ -121,7 +124,7 @@ export const ContactSectionInputWrapper = styled.div`
   }
 
    select {
-    min-width: 300px;
+    min-width: 100%;
     height: 48px;
     border-radius: 8px;
     padding: 8px 16px;
@@ -145,7 +148,7 @@ export const ContactSectionInputWrapper = styled.div`
         border: 1px solid var(--error-color);
       `}
     @media only screen and (min-width: 1024px) {
-      min-width: 400px;
+      min-width: 100%;
     }
   }
   .name-input {
@@ -157,6 +160,7 @@ export const ContactSectionInputWrapper = styled.div`
     padding: 16px;
     height: 100%;
     margin-top: 16px;
+    position: relative;
     border: 1px solid var(--primary-basic-grey);
     &:hover {
       border: 1px solid var(--primary-color);
@@ -179,7 +183,7 @@ export const ContactSectionInputWrapper = styled.div`
   ${(props) =>
     props.formmargin &&
     css`
-      margin-top: 16px;
+      margin-top: 100px;
       @media only screen and (min-width: 1024px) {
         margin-top: 0;
         margin-left: 24px;
