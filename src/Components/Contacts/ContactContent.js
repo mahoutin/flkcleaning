@@ -84,12 +84,11 @@ const ContactContent = () => {
                   value={form.email}
                   onChange={e => setForm({...form, email: e.target.value})}
                 />
+
+                <div>
                 <label for="services">What service would you like to get a quote for:</label>
-
                 <select name="request_service" id="services" onChange={e => setForm({...form, service: e.target.value})} >
-                  
                   <option value="Janitorial Service">Janitorial Service</option>
-
                   <option value="Green Cleaning">Green Cleaning</option>
                   <option value="Carpet Cleaning">Carpet Cleaning</option>
                   <option value="Disinfecting Surfaces">Disinfecting Surfaces</option>
@@ -102,6 +101,9 @@ const ContactContent = () => {
                   <option value="Commercial Cleaning">Commercial Cleaning</option>
                 
                 </select>
+                </div>
+
+
               </ContactSectionInputWrapper>
               <ContactSectionInputWrapper formmargin>
                 <label>Message</label>

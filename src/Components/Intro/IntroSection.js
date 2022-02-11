@@ -23,7 +23,7 @@ const IntroSection = () => {
             <Link to="#contact" className="quotelinks linkbutton">
                  Get a quote
           </Link>
-            <ButtonStyle linkmarginleft servicebutton><a href="tel:1-207-409-5286" className="phonecall">📞 (207) 409-5286</a> </ButtonStyle>
+            <ButtonStyle linkmarginleft servicebutton nopadding ><a href="tel:1-207-409-5286" className="phonecall">📞 (207) 409-5286</a> </ButtonStyle>
             </IntoButtonContainer>
         </IntroSessionsHalfContainer>
         <IntroSessionsHalfContainer>

@@ -37,7 +37,7 @@ const NavBar = () => {
         <Drawer.Body>
           <NavDrawerStyle navbar>
             <NavDrawerItemStyle>
-              <Link to="/" className="navlinks" onClick={() => setOpen(false)}>
+              <Link to="/#intro" className="navlinks" onClick={() => setOpen(false)}>
                 <NavDrawerLinkStyle>Home</NavDrawerLinkStyle>
               </Link>
             </NavDrawerItemStyle>
@@ -80,7 +80,7 @@ const NavBar = () => {
           <NavStyle className="ms-auto" navbar>
             <NavItemStyle>
               <NavLinkStyle>
-                <Link to="/" className="navlinks navlinksdesktop">
+                <Link to="#intro" className="navlinks navlinksdesktop">
                   Home
                 </Link>
               </NavLinkStyle>

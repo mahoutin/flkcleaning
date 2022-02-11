@@ -180,6 +180,12 @@ export const ButtonStyle = styled(Button)`
     `}
 
   ${(props) =>
+    props.nopadding &&
+    css`
+      padding: 0;
+    `}
+
+  ${(props) =>
     props.whitebg &&
     css`
       background-color: var(--primary-white);

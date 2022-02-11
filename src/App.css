@@ -215,6 +215,17 @@
 
   .phonecall{
     color: #000;
+    height: 100%;
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phonecall:active{
+    color: var(--primary-white);
+    text-decoration: none;
   }
   .phonecall:hover{
     color: var(--primary-white);
@@ -238,3 +249,5 @@
     color: #f4bf00;
     
   }
+
+

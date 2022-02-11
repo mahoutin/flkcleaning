@@ -41,10 +41,9 @@ export const ContactSectionContentBottomWrapper = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-   
   }
 
-  .send-confimation{
+  .send-confimation {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -52,11 +51,11 @@ export const ContactSectionContentBottomWrapper = styled.div`
     align-items: center;
   }
 
-  .send-confimation-message{
+  .send-confimation-message {
     font-size: var(--body-md);
     font-family: var(--Body-font-family);
     font-weight: var(--body-regular-weight);
-    line-height: 130% ;
+    line-height: 130%;
     color: var(--body-text-color);
     width: 100%;
     text-align: center;
@@ -66,8 +65,8 @@ export const ContactSectionContentBottomWrapper = styled.div`
     border: 2px solid var(--primary-color);
     padding: 8px;
     @media only screen and (min-width: 1024px) {
-   width: 50%;
-  }
+      width: 50%;
+    }
   }
 `;
 export const ContactSectionFormContent = styled.div`
@@ -87,7 +86,7 @@ export const ContactSectionInputWrapper = styled.div`
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height:180px;
+  height: 180px;
 
   label {
     font-size: var(--body-md);
@@ -96,12 +95,10 @@ export const ContactSectionInputWrapper = styled.div`
     line-height: 130%;
     color: var(--primary-white);
     margin-bottom: 8px;
-
-    
   }
   input {
-    min-width: 300px ;
-    height: 48px ;
+    min-width: 300px;
+    height: 48px;
     border-radius: 8px;
     padding: 16px;
 
@@ -119,17 +116,20 @@ export const ContactSectionInputWrapper = styled.div`
         border: 1px solid var(--error-color);
       `}
     @media only screen and (min-width: 1024px) {
-      min-width: 400px ;
+      min-width: 400px;
     }
   }
 
-  select {
-    min-width: 300px ;
-    height: 48px ;
+   select {
+    min-width: 300px;
+    height: 48px;
     border-radius: 8px;
-    padding: 16px;
-    option{
-        border: 1px solid red !important;
+    padding: 8px 16px;
+
+
+    &::before{
+      content: "heree" !important;
+      color: #000000;
     }
     border: 1px solid var(--primary-basic-grey);
     &:hover {
@@ -145,21 +145,21 @@ export const ContactSectionInputWrapper = styled.div`
         border: 1px solid var(--error-color);
       `}
     @media only screen and (min-width: 1024px) {
-      min-width: 400px ;
+      min-width: 400px;
     }
   }
-  .name-input{
+  .name-input {
     margin-bottom: 16px;
-  }
+  } 
   textarea {
-    min-width: 300px ;
+    min-width: 300px;
     border-radius: 8px;
     padding: 16px;
     height: 100%;
     margin-top: 16px;
-    border: 1px solid var(--primary-basic-grey) ;
+    border: 1px solid var(--primary-basic-grey);
     &:hover {
-      border: 1px solid var(--primary-color) ;
+      border: 1px solid var(--primary-color);
     }
     &:focus {
       border: 1px solid var(--primary-color);
@@ -172,7 +172,7 @@ export const ContactSectionInputWrapper = styled.div`
       `}
 
     @media only screen and (min-width: 1024px) {
-      min-width: 400px ;
+      min-width: 400px;
       margin-top: 0px;
     }
   }
@@ -214,9 +214,8 @@ export const ContactSectionButtonWrapper = styled.div`
     }
   }
   @media only screen and (min-width: 1024px) {
-   
-      margin-top: 64px;
-    }
+    margin-top: 64px;
+  }
 `;
 export const SectionHeaderKeyWord = styled.span`
   color: var(--primary-color);
@@ -247,10 +246,10 @@ export const SectionHeader = styled.div`
     width: 60%;
     padding: 0;
     ${(props) =>
-    props.headerwidth &&
-    css`
-      width: 80%;
-    `}
+      props.headerwidth &&
+      css`
+        width: 80%;
+      `}
   }
 `;
 export const SectionDescription = styled.div`

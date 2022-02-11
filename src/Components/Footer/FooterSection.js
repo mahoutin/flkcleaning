@@ -16,7 +16,7 @@ const IntroSection = () => {
             <FooterDes>📍 FKLCLEANINGSERVICE <br/>199 Forest St, Westbrook, ME 04092</FooterDes>
             <FooterDes>📞 (207) 409-5286</FooterDes>
             <FooterDes>📧 fklcleaningservice@gmail.com</FooterDes>
-            <FooterDes>Follow us on facebook: <a href="https://www.facebook.com/FKL-Cleaning-Service-and-Sells-LLC-110417934891110/photos/?ref=page_internal." className="sociallink">@FKL Cleaning Service and Sells LLC</a></FooterDes>
+            <FooterDes>Follow us on facebook: <a href="https://www.facebook.com/FKL-Cleaning-Services-103027622311539" className="sociallink" target="_blank" rel="noopener noreferrer">@FKL Cleaning Service and Sells LLC</a></FooterDes>
         </FooterHalfWrapper>
         <FooterHalfWrapper>
             <FooterHeader>Our Services</FooterHeader>
