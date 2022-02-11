@@ -31,7 +31,7 @@ const WhySection = () => {
         <SessionHeader>Why should you choose us?</SessionHeader>
         <SessionDescription>
           We have been trusted since 2018. We have cleaned over 10,000 houses,
-          offices and many custormers are satisfied with our services. WWe are dedicated to catch back our customers satisfaction after observing a cleaning job well done.{" "}
+          offices and many custormers are satisfied with our services. We are dedicated to catch back our customers satisfaction after observing a cleaning job well done.{" "}
         </SessionDescription>
         <Link to="#contact" className="quotelinks quotecollinks quote">
           Get a quote

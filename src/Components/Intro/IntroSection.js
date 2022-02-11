@@ -17,7 +17,7 @@ const IntroSection = () => {
             Clean Home. Professional Service. Fair Price
             </IntoHeader>
             <IntoDescription>
-            We are a certified company. We Provide the best cleaning service for you and company.
+            We are a certified company. We Provide the best cleaning service for you and your company.
             </IntoDescription>
             <IntoButtonContainer>
             <Link to="#contact" className="quotelinks linkbutton">

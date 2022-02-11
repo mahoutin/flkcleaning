@@ -33,7 +33,7 @@ const WhySection = () => {
   return (
     <ServiceSessionsContainer>
       <SessionsTitle>OUR SERVICES</SessionsTitle>
-      <SessionHeader>We are providing the following Services</SessionHeader>
+      <SessionHeader>We provide the following services</SessionHeader>
       <ServiceWrapper>
         <ServiceWrapperItem>
           <SessionName>Janitorial Service</SessionName>

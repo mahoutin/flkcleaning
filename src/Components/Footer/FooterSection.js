@@ -12,7 +12,7 @@ const IntroSection = () => {
   return (
     <FooterSectionWrapper>
         <FooterHalfWrapper>
-            <FooterHeader>Contacts Us</FooterHeader>
+            <FooterHeader>Contact Us</FooterHeader>
             <FooterDes>📍 FKLCLEANINGSERVICE <br/>199 Forest St, Westbrook, ME 04092</FooterDes>
             <FooterDes>📞 (207) 409-5286</FooterDes>
             <FooterDes>📧 fklcleaningservice@gmail.com</FooterDes>
