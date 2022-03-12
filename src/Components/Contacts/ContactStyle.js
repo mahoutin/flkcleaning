@@ -77,7 +77,6 @@ export const ContactSectionFormContent = styled.div`
   justify-content: center;
   margin-bottom: 24px;
 
-
   @media only screen and (min-width: 1024px) {
     flex-direction: row;
   }
@@ -89,7 +88,7 @@ export const ContactSectionInputWrapper = styled.div`
   justify-content: center; */
   width: 100%;
   height: 180px;
-  /* border: 1px solid red ; */
+  /* border: 1px solid red; */
 
   label {
     font-size: var(--body-md);
@@ -122,15 +121,19 @@ export const ContactSectionInputWrapper = styled.div`
       min-width: 400px;
     }
   }
+  ${(props) =>
+    props.fitsize &&
+    css`
+      height: fit-content;
+    `}
 
-   select {
+  select {
     min-width: 100%;
     height: 48px;
     border-radius: 8px;
     padding: 8px 16px;
 
-
-    &::before{
+    &::before {
       content: "heree" !important;
       color: #000000;
     }
@@ -153,7 +156,7 @@ export const ContactSectionInputWrapper = styled.div`
   }
   .name-input {
     margin-bottom: 16px;
-  } 
+  }
   textarea {
     min-width: 300px;
     border-radius: 8px;

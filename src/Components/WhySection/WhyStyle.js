@@ -31,6 +31,8 @@ export const WhySessionsContainerHalf = styled.div`
   @media only screen and (min-width: 1024px) {
     width:50%;
   }
+
+ 
 `
 export const WhySessionsContainerHalfDivider = styled.div`
   display: flex;

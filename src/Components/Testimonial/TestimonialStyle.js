@@ -57,6 +57,10 @@ export const SessionsTitle = styled.div`
     @media only screen and (min-width: 760px) {
         font-size: var(--body-lg);
   }
+  @media only screen and (max-width: 340px) {
+    /* padding: 0 32px; */
+  
+  }
 `
 
 export const SessionHeader = styled.div`
@@ -72,8 +76,9 @@ export const SessionHeader = styled.div`
     css`
       color: var(--header-text-color);
     `}
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 340px) {
     font-size: var(--header-xs);
+    /* padding: 0 32px; */
   }
   @media only screen and (min-width: 760px) {
     font-size: var(--header-md);
@@ -99,6 +104,9 @@ export const SessionDescription = styled.div`
     width: 80%;
     font-size: var(--body-lg);
   }
+  /* @media only screen and (max-width: 340px) {
+    padding: 0 32px;
+  } */
 `;
 
 export const SessionName = styled.div`
