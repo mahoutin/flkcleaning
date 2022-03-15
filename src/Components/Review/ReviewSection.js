@@ -39,7 +39,11 @@ const AboutSection = () => {
 	const [form, setForm] = useState(init)
 	const [reviewList, setReviewList] = useState([])
 	const [moyenne, setMoyenne] = useState(0)
-	const [isSend, sestIsSend] = useState(false)
+	const [notify, setNotify] = useState({
+		type: '',
+		msg: '',
+		show: false
+	})
 
 	useEffect(() => {
 		const request = query(
@@ -55,18 +59,30 @@ const AboutSection = () => {
 				rateTotal += value.rate
 				data.push(value)
 			})
-			if (data.length !== 0) setMoyenne(rateTotal / data.length)
+			setMoyenne(data.length !== 0 ? rateTotal / data.length : 0)
 			setReviewList(data)
 		})
 	}, [])
 
 	const sendReview = () => {
-		setDoc(doc(db, "reviews", form.id), {
-			...form,
-		}).then(() => {
-			setForm(init)
-			sestIsSend(true)
-		});
+		if (form.name === "" || form.message === "") {
+			setNotify({
+				type: 'error',
+				msg: 'Please enter your name and review.',
+				show: true
+			})
+		}else{
+			setDoc(doc(db, "reviews", form.id), {
+				...form,
+			}).then(() => {
+				setForm(init)
+				setNotify({
+					type: 'success',
+					msg: 'Thank you for your feedback, your review have been posted.',
+					show: true
+				})
+			});
+		}
 	}
 
 	const getLabelMonth = number => {
@@ -118,8 +134,8 @@ const AboutSection = () => {
 
 			<WhySessionsContainerHalf>
 				<ReviewAddWraper>
-					{isSend && (
-						<Message type="success">Thank you for your feedback, your review have been posted.</Message>)}
+					{notify.show && (
+						<Message type={notify.type}>{notify.msg}</Message>)}
 					<SessionHeader style={{fontSize: 24}}>
 						Let’s us know how we did
 					</SessionHeader>
