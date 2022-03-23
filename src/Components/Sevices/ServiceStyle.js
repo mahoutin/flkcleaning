@@ -45,7 +45,8 @@ export const ServiceWrapperItem = styled.div`
 export const ServiceWrapperDes = styled.div`
  font-size: var(--body-sm);
       font-family: var(--Body-font-family);
-      
+      height:fit-content ;
+      overflow-y:scroll ;
 `
 export const ServiceWrapperImage = styled.div`
     width: 100px;

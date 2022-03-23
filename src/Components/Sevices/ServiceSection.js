@@ -1,17 +1,18 @@
 import React from "react";
 
 //components
-import Janitory from "../../Assets/janitori.jpeg"
-import green from "../../Assets/green.jpeg"
-import carpet from "../../Assets/carpet.jpg"
-import disinfect from "../../Assets/desinfect.jpeg"
-import Airbnb from "../../Assets/aibnb.jpeg"
-import commercial from "../../Assets/commercial.jpeg"
-import covid from "../../Assets/covid.jpeg"
-import dishwash from "../../Assets/dishwash.jpeg"
-import floor from "../../Assets/floor.jpeg"
-import mouveout from "../../Assets/mouveout.jpeg"
-import residence from "../../Assets/residence.png"
+import Janitory from "../../Assets/janitori.jpeg";
+import green from "../../Assets/green.jpeg";
+import carpet from "../../Assets/carpet.jpg";
+import disinfect from "../../Assets/desinfect.jpeg";
+import Airbnb from "../../Assets/aibnb.jpeg";
+import commercial from "../../Assets/commercial.jpeg";
+import covid from "../../Assets/covid.jpeg";
+import dishwash from "../../Assets/dishwash.jpeg";
+import floor from "../../Assets/floor.jpeg";
+import mouveout from "../../Assets/mouveout.jpeg";
+import residence from "../../Assets/residence.png";
+import post from "../../Assets/group3.jpeg";
 import { HashLink as Link } from "react-router-hash-link";
 
 //styled
@@ -28,7 +29,6 @@ import {
   SessionsTitle,
 } from "../Testimonial/TestimonialStyle";
 
-
 const WhySection = () => {
   return (
     <ServiceSessionsContainer>
@@ -38,7 +38,7 @@ const WhySection = () => {
         <ServiceWrapperItem>
           <SessionName>Janitorial Service</SessionName>
           <ServiceWrapperImage>
-              <img src={Janitory} alt="janitorial service"/>
+            <img src={Janitory} alt="janitorial service" />
           </ServiceWrapperImage>
           <ServiceWrapperDes>
             We're ready to provide a regular cleaning tasks that keep your
@@ -50,7 +50,7 @@ const WhySection = () => {
         <ServiceWrapperItem>
           <SessionName>Green Cleaning</SessionName>
           <ServiceWrapperImage>
-          <img src={green} alt="green service"/>
+            <img src={green} alt="green service" />
           </ServiceWrapperImage>
           <ServiceWrapperDes>
             Our friendly, professional Green Home cleaning service will leave
@@ -61,7 +61,7 @@ const WhySection = () => {
         <ServiceWrapperItem>
           <SessionName>Carpet Cleaning</SessionName>
           <ServiceWrapperImage>
-          <img src={carpet} alt="green service"/>
+            <img src={carpet} alt="green service" />
           </ServiceWrapperImage>
           <ServiceWrapperDes>
             We take pride and satisfaction in cleaning your carpets as good as
@@ -73,7 +73,7 @@ const WhySection = () => {
         <ServiceWrapperItem>
           <SessionName>Disinfecting Surfaces</SessionName>
           <ServiceWrapperImage>
-          <img src={disinfect} alt="green service"/>
+            <img src={disinfect} alt="green service" />
           </ServiceWrapperImage>
           <ServiceWrapperDes>
             Whether the place requires disinfecting, sanitizing or deep cleaning
@@ -85,7 +85,9 @@ const WhySection = () => {
         </ServiceWrapperItem>
         <ServiceWrapperItem>
           <SessionName>Residential Cleaning</SessionName>
-          <ServiceWrapperImage><img src={residence} alt="green service"/></ServiceWrapperImage>
+          <ServiceWrapperImage>
+            <img src={residence} alt="green service" />
+          </ServiceWrapperImage>
           <ServiceWrapperDes>
             Looking for a bit of extra help when it comes to cleaning up your
             home. We pride ourselves on our excellent performance and strong
@@ -95,7 +97,9 @@ const WhySection = () => {
         </ServiceWrapperItem>
         <ServiceWrapperItem>
           <SessionName>Dishwashing</SessionName>
-          <ServiceWrapperImage><img src={dishwash} alt="green service"/></ServiceWrapperImage>
+          <ServiceWrapperImage>
+            <img src={dishwash} alt="green service" />
+          </ServiceWrapperImage>
           <ServiceWrapperDes>
             In case you have a large amount of dishes that that you don't want
             to clean yourself and could contribute to a hindrance in the
@@ -106,7 +110,9 @@ const WhySection = () => {
         </ServiceWrapperItem>
         <ServiceWrapperItem>
           <SessionName>Move In / Move Out Cleaning</SessionName>
-          <ServiceWrapperImage><img src={mouveout} alt="green service"/></ServiceWrapperImage>
+          <ServiceWrapperImage>
+            <img src={mouveout} alt="green service" />
+          </ServiceWrapperImage>
           <ServiceWrapperDes>
             Moving can be an incredibly stressful and busy time for any
             individual or family. Whether you are a homeowner or a tenant, it is
@@ -116,7 +122,9 @@ const WhySection = () => {
         </ServiceWrapperItem>
         <ServiceWrapperItem>
           <SessionName>Airbnb Cleaning</SessionName>
-          <ServiceWrapperImage><img src={Airbnb} alt="green service"/></ServiceWrapperImage>
+          <ServiceWrapperImage>
+            <img src={Airbnb} alt="green service" />
+          </ServiceWrapperImage>
           <ServiceWrapperDes>
             Our trained team created a system to uphold cleaning standards in
             response to COVID, and recognize the vacation rental owners that are
@@ -126,7 +134,9 @@ const WhySection = () => {
         </ServiceWrapperItem>
         <ServiceWrapperItem>
           <SessionName>Floor Care</SessionName>
-          <ServiceWrapperImage><img src={floor} alt="green service"/></ServiceWrapperImage>
+          <ServiceWrapperImage>
+            <img src={floor} alt="green service" />
+          </ServiceWrapperImage>
           <ServiceWrapperDes>
             Do you have floors that are prone to getting dirty? We can make them
             shine again! Whether your company has carpeted floors or an
@@ -136,7 +146,9 @@ const WhySection = () => {
         </ServiceWrapperItem>
         <ServiceWrapperItem>
           <SessionName>Covid-19 Disinfection</SessionName>
-          <ServiceWrapperImage><img src={covid} alt="green service"/></ServiceWrapperImage>
+          <ServiceWrapperImage>
+            <img src={covid} alt="green service" />
+          </ServiceWrapperImage>
           <ServiceWrapperDes>
             Coronavirus (COVID-19) is affecting residences and businesses
             locally and we are here to support your efforts in keeping them
@@ -147,7 +159,9 @@ const WhySection = () => {
         </ServiceWrapperItem>
         <ServiceWrapperItem>
           <SessionName>Commercial Cleaning</SessionName>
-          <ServiceWrapperImage><img src={commercial} alt="green service"/></ServiceWrapperImage>
+          <ServiceWrapperImage>
+            <img src={commercial} alt="green service" />
+          </ServiceWrapperImage>
           <ServiceWrapperDes>
             Our mission is to keep your business clean so you can focus on
             running it, your employees have a great work environment, and your
@@ -155,10 +169,30 @@ const WhySection = () => {
             have a job-we'll make sure cleaning doesn't have to be part of it.{" "}
           </ServiceWrapperDes>
         </ServiceWrapperItem>
+        <ServiceWrapperItem>
+          <SessionName>Post- Construction Cleaning</SessionName>
+          <ServiceWrapperImage>
+            <img src={post} alt="green service" />
+          </ServiceWrapperImage>
+          <ServiceWrapperDes>
+            When your construction is completed and all the debris are removed,
+            or the building is renovated, our professional team will be there to
+            clean and prepare your new space for move-in and set-up with our
+            post-construction cleaning services. Whatever services you choose,
+            FKL Cleaning Service and Sells will make sure your new commercial
+            building is inviting, clean, and comfortable. we work closely with
+            contractors and other service technicians to help ensure your
+            timelines and deadlines are met.{" "}
+          </ServiceWrapperDes>
+        </ServiceWrapperItem>
       </ServiceWrapper>
-      <Link to="#contact" className="quotelinks quotecollinks quote quotemargin">
-          Get a quote
-        </Link>    </ServiceSessionsContainer>
+      <Link
+        to="#contact"
+        className="quotelinks quotecollinks quote quotemargin"
+      >
+        Get a quote
+      </Link>{" "}
+    </ServiceSessionsContainer>
   );
 };
 
