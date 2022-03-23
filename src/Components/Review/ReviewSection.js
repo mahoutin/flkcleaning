@@ -86,7 +86,7 @@ const AboutSection = () => {
 	}
 
 	const getLabelMonth = number => {
-		const month = ['January', 'February', 'Match', 'April', 'May', 'June',
+		const month = ['January', 'February', 'March', 'April', 'May', 'June',
 			'July', 'August', 'September', 'October', 'November', 'December']
 		return month[number]
 	}
@@ -99,7 +99,7 @@ const AboutSection = () => {
 					<SessionHeader>
 						What customers say about us?
 						<ReviewSessionsContainerNote>
-							{" " + moyenne}
+						{" " + moyenne.toFixed(1)}
 							<ReviewSessionsContaineNumber>
 								<Rate value={moyenne} allowHalf readOnly size="xs"/>
 							</ReviewSessionsContaineNumber>

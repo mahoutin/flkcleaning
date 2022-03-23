@@ -14,7 +14,9 @@ const IntroSection = () => {
     <IntroSessionsContainer>
         <IntroSessionsHalfContainer>
             <IntoHeader>
+              <h1 style={{padding:0, margin:0}}>
             Clean Home. Professional Service. Fair Price
+            </h1>
             </IntoHeader>
             <IntoDescription>
             We are a certified company. We Provide the best cleaning service for you and your company.
